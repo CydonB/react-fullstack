@@ -33,7 +33,8 @@ app.get("/api/games", (req, res) => {
       },
       {
         name: "Deathloop",
-        imageUrl:"https://www.stuff.tv/wp-content/uploads/sites/2/2021/07/8._deathloop_julianna_1.jpg?w=825",
+        imageUrl:
+          "https://www.stuff.tv/wp-content/uploads/sites/2/2021/07/8._deathloop_julianna_1.jpg?w=825",
         url: "https://www.stuff.tv/review/deathloop-review/",
       },
     ],

@@ -27,37 +27,34 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      {!gameList ? (
-        "Loading..."
-      ) : (
-        <>
-          <ul style={{ display: "flex", listStyle: "none"}}>
-            {gameList.map((item) => (
-              <li style={{ height: "100px" }}>
-                <a
-                  href={item.url}
-                  target="blank"
-                  style={{ textDecoration: "none" }}
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "start",
-                    }}
+        {!gameList ? (
+          "Loading..."
+        ) : (
+          <>
+            <ul style={{ display: "flex", listStyle: "none" }}>
+              {gameList.map((item) => (
+                <li style={{ height: "100px" }}>
+                  <a
+                    href={item.url}
+                    target="blank"
+                    style={{ textDecoration: "none" }}
                   >
-                    <p>{item.name}</p>
-                    <img className="header-image"
-                      src={item.imageUrl}
-                      
-                    ></img>
-                  </div>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "start",
+                      }}
+                    >
+                      <p>{item.name}</p>
+                      <img className="header-image" src={item.imageUrl}></img>
+                    </div>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
       </header>
       <main className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
