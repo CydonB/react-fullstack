@@ -31,10 +31,14 @@ app.get("/api/games", (req, res) => {
           "https://s.yimg.com/os/creatr-uploaded-images/2023-05/7e91fe10-fa2e-11ed-bef3-f0a2fa3ae316",
         url: "https://overwatch.blizzard.com/en-us/",
       },
+      {
+        name: "Deathloop",
+        imageUrl:"https://www.stuff.tv/wp-content/uploads/sites/2/2021/07/8._deathloop_julianna_1.jpg?w=825",
+        url: "https://www.stuff.tv/review/deathloop-review/",
+      },
     ],
   });
 });
-
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
 });
