@@ -26,13 +26,14 @@ function App() {
 
   return (
     <div className="App">
+      <header className="App-header">
       {!gameList ? (
         "Loading..."
       ) : (
         <>
-          <ul style={{ display: "flex", listStyle: "none" }}>
+          <ul style={{ display: "flex", listStyle: "none"}}>
             {gameList.map((item) => (
-              <li>
+              <li style={{ height: "100px" }}>
                 <a
                   href={item.url}
                   target="blank"
@@ -46,9 +47,9 @@ function App() {
                     }}
                   >
                     <p>{item.name}</p>
-                    <img
+                    <img className="header-image"
                       src={item.imageUrl}
-                      style={{ width: "30%", height: "auto" }}
+                      
                     ></img>
                   </div>
                 </a>
@@ -57,7 +58,8 @@ function App() {
           </ul>
         </>
       )}
-      <header className="App-header">
+      </header>
+      <main className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>{!data ? "Loading..." : data}</p>
         <a
@@ -68,7 +70,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </main>
     </div>
   );
 }
